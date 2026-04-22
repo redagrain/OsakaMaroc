@@ -33,4 +33,15 @@ Logo:
 [x] put an arrow beside Nos Produits so it will look like a dropdown
 [x] try to make the social media icons smaller and solid not regular icons and over phone number
 [x] make all header items aligned in center
-
+[x] Create slide in Hero section with images in slides folder with placeholder title that i will update manually
+[x] remove subtitle from slides
+[x] add the new images to slides
+[x] use the following titles to slides: 
+    - Equipements Pneumatique Industriels
+    - Système Hydraulique Industriels
+    - Automatisme Industriels
+    - Matériels pour tous type de Transmission
+    - Large Gammes des Pompes pour tous type des besoins
+    - Instrumentation et Process Industriels
+    - Fournitures et Outillages pour tous les types d’activités
+    - Equipements de Protection Individuelle
