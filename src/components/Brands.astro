@@ -1,0 +1,115 @@
+---
+const brandImages = [
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.25.45%20(1).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.25.45%20(2).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.25.45%20(6).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.25.45%20(8).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.25.45%20(9).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.25.45.jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.25.46.jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.17.jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.18%20(2).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.18%20(3).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.18%20(4).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.18%20(5).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.18%20(6).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.18.jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.19%20(1).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.19%20(4).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.19%20(5).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.20%20(2).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.20%20(3).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.24%20(7).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.26.24%20(8).jpeg",
+  "/images/brands/WhatsApp%20Image%202026-04-16%20at%2010.27.06.jpeg"
+];
+---
+
+<section class="brands-section" id="marques">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Nos Marques</h2>
+      <p class="section-subtitle">Nous collaborons avec les leaders mondiaux de l'industrie</p>
+    </div>
+  </div>
+
+  <div class="scroller" data-animated="true">
+    <ul class="scroller-inner">
+      {brandImages.map((src) => (
+        <li>
+          <img src={src} alt="Brand Logo" loading="lazy" />
+        </li>
+      ))}
+      {brandImages.map((src) => (
+        <li aria-hidden="true">
+          <img src={src} alt="Brand Logo" loading="lazy" />
+        </li>
+      ))}
+    </ul>
+  </div>
+</section>
+
+<style>
+  .brands-section {
+    padding: 5rem 0;
+    background: #fdfdfd;
+    overflow: hidden;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #555555;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+    color: #888888;
+  }
+
+  .scroller {
+    max-width: 100vw;
+  }
+  
+  .scroller-inner {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 4rem;
+    width: max-content;
+    padding-block: 1rem;
+    margin: 0;
+    list-style: none;
+    animation: scroll 70s linear infinite;
+  }
+
+  .scroller-inner li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 150px;
+  }
+
+  .scroller-inner img {
+    height: 80px;
+    max-width: 200px;
+    object-fit: contain;
+    mix-blend-mode: multiply; /* Helps eliminate white backgrounds if it's a solid white background page */
+  }
+
+  @keyframes scroll {
+    to {
+      transform: translateX(calc(-50% - 2rem));
+    }
+  }
+
+  /* Optional pause on hover */
+  .scroller:hover .scroller-inner {
+    animation-play-state: paused;
+  }
+</style>

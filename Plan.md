@@ -56,3 +56,4 @@ Logo:
     - Instrumentation et Process
     - Fournitures et Outillages
     - Equipements de Protection Individuelle (EPI)
+[x] add another section for Nos Marques with scrolling logos from /images/brands folder 
