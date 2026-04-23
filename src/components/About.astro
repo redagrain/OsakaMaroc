@@ -1,0 +1,135 @@
+---
+
+---
+
+<section class="about-section" id="about">
+  <div class="container about-container">
+    <div class="about-content">
+      <h2 class="section-title">Osaka Solutions</h2>
+
+      <div class="about-text">
+        <p>
+          <strong>Osaka Solutions Maroc</strong> incarne l’excellence en matière de
+          sourcing et d’approvisionnement d’équipements industriels. Forte de plus
+          de 15 années d’expérience, notre société accompagne les acteurs industriels
+          les plus exigeants, au Maroc comme à l’international, dans la sélection
+          et l’acquisition de solutions techniques à forte valeur ajoutée.
+        </p>
+        <p>
+          Nous allions expertise, rigueur et vision stratégique pour répondre
+          aux standards les plus élevés du marché.
+        </p>
+      </div>
+
+      <a href="/about" class="btn-primary">Voir Plus</a>
+    </div>
+    <div class="about-image">
+      <img
+        src="/images/AboutOsaka.webp"
+        alt="Osaka Solutions Maroc"
+        loading="lazy"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .about-section {
+    padding: 6rem 0;
+    background: #ffffff;
+  }
+
+  .about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .about-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    max-height: 400px;
+    margin-left: auto;
+  }
+
+  .about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    /* aspect-ratio: 4/5; */
+  }
+
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 15px;
+  }
+
+  .section-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: #009fe3;
+    border-radius: 2px;
+  }
+
+  .about-text {
+    color: #666;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+  }
+
+  .about-text p {
+    margin-bottom: 1.25rem;
+  }
+
+
+  .btn-primary {
+    background: #009fe3;
+    color: #fff;
+    padding: 0.85rem 2rem;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 159, 227, 0.3);
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 159, 227, 0.4);
+  }
+
+  @media (max-width: 992px) {
+    .about-container {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+
+    .about-image img {
+      aspect-ratio: 16/9;
+    }
+  }
+</style>
