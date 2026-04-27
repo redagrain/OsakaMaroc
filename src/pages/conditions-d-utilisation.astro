@@ -1,0 +1,146 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Conditions d'Utilisation | Osaka Solutions Maroc"
+  description="Conditions générales d'utilisation du site Osaka Solutions Maroc. Veuillez lire attentivement ces termes avant d'utiliser notre site web."
+>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Conditions d'Utilisation</h1>
+      <p class="breadcrumb"><a href="/">Accueil</a> <span>/</span> Conditions d'Utilisation</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="legal-page">
+    <div class="container">
+      <div class="legal-content">
+        <h2>1. Acceptation des conditions</h2>
+        <p>En accédant et en utilisant le site web de Osaka Solutions Maroc, vous acceptez de vous conformer et d'être lié par les présentes conditions générales d'utilisation. Si vous n'acceptez pas ces termes, veuillez ne pas utiliser notre site.</p>
+
+        <h2>2. Présentation du site</h2>
+        <p>Le présent site est la propriété de Osaka Solutions Maroc, société spécialisée dans le sourcing et l'approvisionnement d'équipements industriels. Ce site a pour vocation de fournir des informations sur nos produits, marques partenaires et services.</p>
+
+        <h2>3. Propriété intellectuelle</h2>
+        <p>L'ensemble du contenu de ce site (textes, images, logos, vidéos, architecture, etc.) est protégé par le droit d'auteur et la propriété intellectuelle. Toute reproduction, représentation, modification, publication ou adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est formellement interdite sans l'autorisation écrite préalable de Osaka Solutions Maroc.</p>
+        <p>Les logos des marques partenaires affichés sur le site (<a href="/nos-marques">Nos Marques</a>) appartiennent à leurs propriétaires respectifs et sont utilisés à des fins d'information.</p>
+
+        <h2>4. Responsabilité</h2>
+        <p>Osaka Solutions Maroc s'efforce de fournir sur son site des informations aussi précises que possible. Toutefois, nous ne saurions être tenus responsables des omissions, inexactitudes et carences dans la mise à jour des informations, qu'elles soient de notre fait ou du fait des tiers partenaires qui nous fournissent ces informations.</p>
+        <p>L'utilisation des informations et contenus disponibles sur l'ensemble du site ne saurait en aucun cas engager la responsabilité de Osaka Solutions Maroc, à quelque titre que ce soit.</p>
+
+        <h2>5. Liens hypertextes</h2>
+        <p>Le site peut contenir des liens hypertextes vers d'autres sites web. Osaka Solutions Maroc n'a pas la possibilité de vérifier le contenu de ces sites et n'assumera en conséquence aucune responsabilité de ce fait. Le risque lié à l'utilisation de ces sites incombe pleinement à l'utilisateur.</p>
+
+        <h2>6. Droit applicable et juridiction compétente</h2>
+        <p>Les présentes conditions générales d'utilisation sont régies par le droit marocain. Tout litige relatif à l'utilisation du site web de Osaka Solutions Maroc, à défaut d'accord amiable, sera soumis à la compétence exclusive des tribunaux de Tanger.</p>
+
+        <h2>7. Contact</h2>
+        <p>Pour toute question relative aux présentes conditions d'utilisation, vous pouvez nous contacter via notre page <a href="/nous-contacter">Nous Contacter</a> ou par e-mail à l'adresse <a href="mailto:contact@osakamaroc.ma">contact@osakamaroc.ma</a>.</p>
+        
+        <p class="last-updated">Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}</p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Hero */
+  .page-hero {
+    position: relative;
+    height: 280px;
+    background: url('/images/AboutOsaka.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 12, 0.65);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  .breadcrumb {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.95rem;
+  }
+
+  .breadcrumb a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .breadcrumb a:hover {
+    color: #009FE3;
+  }
+
+  .breadcrumb span {
+    margin: 0 0.5rem;
+  }
+
+  /* Legal Content */
+  .legal-page {
+    padding: 5rem 0;
+    background: #ffffff;
+  }
+
+  .legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .legal-content h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .legal-content h2:first-child {
+    margin-top: 0;
+  }
+
+  .legal-content p {
+    margin-bottom: 1.25rem;
+  }
+
+  .legal-content a {
+    color: #009FE3;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .legal-content a:hover {
+    text-decoration: underline;
+  }
+
+  .last-updated {
+    margin-top: 4rem !important;
+    font-style: italic;
+    color: #888;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+  }
+</style>

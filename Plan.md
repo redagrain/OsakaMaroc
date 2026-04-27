@@ -117,3 +117,10 @@ Logo:
 [x] add contact us component to notre societe page
 [x] update brands in homepage to use the new logos max 25 logos in scroll
 [x] create nos marques page with all logos in brands folder, and subtitle with 'Plus de 15 ans d’expérience dans la distribution des Fournitures et matérielles des Marques de premier plan pour l’industrie.'
+[x] create nous contacter page with using already created component 
+[x] update the links of social media to be as following: 
+    - https://www.linkedin.com/in/hamza-hassouni-392b4556/
+    - https://www.instagram.com/osakasolutionsmaroc/
+    - https://www.facebook.com/osakasolutionsmaroc
+[x] create standard privacy policy page in french
+[x] create standard terms of use page in french

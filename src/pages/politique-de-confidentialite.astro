@@ -1,0 +1,169 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Politique de Confidentialité | Osaka Solutions Maroc"
+  description="Politique de confidentialité d'Osaka Solutions Maroc. Découvrez comment nous protégeons vos données personnelles."
+>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Politique de Confidentialité</h1>
+      <p class="breadcrumb"><a href="/">Accueil</a> <span>/</span> Politique de Confidentialité</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <section class="legal-page">
+    <div class="container">
+      <div class="legal-content">
+        <h2>1. Introduction</h2>
+        <p>Chez Osaka Solutions Maroc, nous accordons une importance primordiale à la confidentialité et à la sécurité de vos données personnelles. Cette politique de confidentialité explique comment nous recueillons, utilisons, protégeons et partageons vos informations lorsque vous utilisez notre site web et nos services.</p>
+
+        <h2>2. Collecte des données personnelles</h2>
+        <p>Nous pouvons collecter des informations personnelles lorsque vous nous contactez, demandez un devis, ou interagissez avec nos services. Les types d'informations collectées peuvent inclure :</p>
+        <ul>
+          <li>Nom et prénom</li>
+          <li>Adresse e-mail</li>
+          <li>Numéro de téléphone</li>
+          <li>Nom de l'entreprise et fonction</li>
+          <li>Toute autre information que vous choisissez de nous communiquer</li>
+        </ul>
+
+        <h2>3. Utilisation des informations</h2>
+        <p>Les informations que nous collectons sont utilisées dans les buts suivants :</p>
+        <ul>
+          <li>Traiter vos demandes, commandes et devis.</li>
+          <li>Vous fournir un service client réactif et personnalisé.</li>
+          <li>Améliorer nos produits, services et l'expérience utilisateur de notre site web.</li>
+          <li>Vous envoyer des communications commerciales ou techniques pertinentes, si vous y avez consenti.</li>
+        </ul>
+
+        <h2>4. Protection des données</h2>
+        <p>Nous mettons en œuvre des mesures de sécurité techniques et organisationnelles appropriées pour protéger vos données personnelles contre tout accès non autorisé, altération, divulgation ou destruction.</p>
+
+        <h2>5. Partage des données</h2>
+        <p>Nous ne vendons, n'échangeons, ni ne transférons vos informations personnelles identifiables à des tiers, sauf lorsque cela est nécessaire pour répondre à une demande de votre part (par exemple, aux sociétés de transport pour la livraison de vos équipements), ou si la loi nous y oblige.</p>
+
+        <h2>6. Cookies</h2>
+        <p>Notre site web peut utiliser des cookies pour améliorer votre expérience de navigation. Vous pouvez configurer votre navigateur pour refuser les cookies, mais cela peut limiter certaines fonctionnalités du site.</p>
+
+        <h2>7. Vos droits</h2>
+        <p>Conformément à la réglementation applicable en matière de protection des données, vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition au traitement de vos données personnelles. Pour exercer ces droits, veuillez nous contacter à l'adresse suivante : <a href="mailto:contact@osakamaroc.ma">contact@osakamaroc.ma</a>.</p>
+
+        <h2>8. Modifications de la politique</h2>
+        <p>Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page avec la date de mise à jour.</p>
+        
+        <p class="last-updated">Dernière mise à jour : {new Date().toLocaleDateString('fr-FR')}</p>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  /* Hero */
+  .page-hero {
+    position: relative;
+    height: 280px;
+    background: url('/images/AboutOsaka.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    margin-top: 80px;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 10, 12, 0.65);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  .breadcrumb {
+    color: rgba(255,255,255,0.7);
+    font-size: 0.95rem;
+  }
+
+  .breadcrumb a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .breadcrumb a:hover {
+    color: #009FE3;
+  }
+
+  .breadcrumb span {
+    margin: 0 0.5rem;
+  }
+
+  /* Legal Content */
+  .legal-page {
+    padding: 5rem 0;
+    background: #ffffff;
+  }
+
+  .legal-content {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .legal-content h2 {
+    font-size: 1.6rem;
+    color: #333;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .legal-content h2:first-child {
+    margin-top: 0;
+  }
+
+  .legal-content p {
+    margin-bottom: 1.25rem;
+  }
+
+  .legal-content ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+  }
+
+  .legal-content li {
+    margin-bottom: 0.5rem;
+  }
+
+  .legal-content a {
+    color: #009FE3;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .legal-content a:hover {
+    text-decoration: underline;
+  }
+
+  .last-updated {
+    margin-top: 4rem !important;
+    font-style: italic;
+    color: #888;
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+  }
+</style>
